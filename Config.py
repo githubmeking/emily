@@ -49,21 +49,21 @@ if ENV:
     LOGGING = getenv("LOGGING", "Log")  # or GroupLog
 
 else:
-    API_ID = 11354711
-    API_HASH = "cf17ce4aec110b1112b4996e4ac96f06"
+    API_ID = 19780664
+    API_HASH = "573f7815f36358d5e69892776a792a41"
     # "5118244333:AAEF80E3lszb2hVLkl4mZ1gVEkP9aPPKmaI" # @CallToneBot
-    BOT_ID = []
+    BOT_ID = [6202214105]
     # "5073900336:AAG6RP_wjLBOGFagyKi8EElTfeC5zYc19I0"
-    BOT_TOKEN = "5073900336:AAHMqmM75oFSKtaHEH4-fET281mT5oVvF_E"
+    BOT_TOKEN = "6202214105:AAHkxKOr43JDZfpM5lCGRFM-RDku96ragQI"
     COMMAND = "/"
-    BOT_USERNAME = "CallToneBot"
-    BOT_NAME = "🎴 Call Tone Bot"
-    OWNER_ID = 1769015061  # 5326318807
+    BOT_USERNAME = "Taggeruserbot"
+    BOT_NAME = "Tagger deneme"
+    OWNER_ID = 5049300486  # 5326318807
     DURATION = 3
     COUNT = 5
     ADMIN = "True"
     LANGUAGE = "TR"
-    LOG_CHANNEL = [-1001757774317]
+    LOG_CHANNEL = [-1001963297214]
     GROUP_SUPPORT = "RepohaneX"
     DATABASE_URL = "mongodb+srv://lucis:lucis@cluster0.hpuze.mongodb.net/lucis?retryWrites=true&w=majority"
     # "mongodb+srv://aylak:aylak@cluster0.jyr2p.mongodb.net/Cluster0?retryWrites=true&w=majority"
