@@ -1,0 +1,13 @@
+pyrogram==2.0.93
+TgCrypto
+python-dotenv
+motor
+pillow
+aiofiles
+aiohttp
+requests
+pymongo[srv]
+psutil
+emoji
+tglogging
+pythonansi

@@ -1,0 +1,87 @@
+
+{
+    "name": "Call Tone Tagger Bot", 
+    "description": "Telegram gruplarınızda üyeleri etiketleyin.",
+    "repository": "https://github.com/aylak-github/CallTone",
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "my.telegram.org/apps Sitesinden alabilirsiniz.",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "my.telegram.org/apps Sitesinden alabilirsiniz.",
+        "required": true
+      },
+      "BOT_ID": {
+        "description": "Telegram botunuzun ID'si.",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "@BotFather'dan alabilirsiniz.",
+        "required": true
+      },
+      "BOT_USERNAME": {
+        "description": "Botunuzun '@' olmadan kullanıcı adı.",
+        "required": true
+      },
+      "BOT_NAME": {
+        "description": "Botunuzun kendini tanıtmasını istediğiniz adı.",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "Bot sahibinin Telegram hesabının kullanıcı kimliği (ID)",
+        "required": true
+      },
+      "DURATION": {
+        "description": "Her etiket mesajınızın arasındaki süre farkı. Varsaıylan olarak 3'tür.",
+        "required": false,
+        "value": "3"
+      },
+      "COUNT": {
+        "description": "Her mesajda etiketlenecek üye sayısı. Varsayılan olarak 6'dır",
+        "required": false,
+        "value": "6"
+      },
+      "COMMAND": {
+        "description": "Botunuzun vermesi gereken komut işareti. Örnek: '/start'. Varsayılan olarak '/' işaretidir.",
+        "required": false,
+        "value": "/"
+      },
+      "ADMIN": {
+        "description": "Botunuzun gruplarda admin olmadan çalışmasını istemiyorsanız bu değeri 'True' yapın, aksi takdirde boş bırakın.",
+        "required": false
+      },
+      "LANGUAGE": {
+        "description": "Botunuzun dili. AZ - TR - EN",
+        "required": false,
+        "value": "TR"
+      },
+      "LOG_CHANNEL": {
+        "description": "Yeni kullanıcılar, yasaklamalar gibi değerlerin kaydedileceği log grubu kimliği.",
+        "required": true
+      },
+      "GROUP_SUPPORT": {
+        "description": "Kullanıcıların botun yetkilisine ulaşmak istediğinde, gerekli kullanıcı adı. ( Grup ya da kişi )",
+        "required": true
+      },
+      "DATABASE_URL": {
+        "description": "Botun verileri kaydetmesi için gerekli olan MongoDB veritabanı URL'si.",
+        "required": true
+      },
+      "BROADCAST_AS_COPY": {
+        "description": "Yayın yaparken gönderilerin iletildi olarak gönderilmesini istiyorsanız bu değeri boş bırakın.",
+        "required": false
+      },
+      "LOGGING": {
+        "description": "Logun nereye yazdıralacağı. Gruba göndermesi için GroupLog terminalde yazdırması için boş bırakın.",
+        "required": false
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
+  
